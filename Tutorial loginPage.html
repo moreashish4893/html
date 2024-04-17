@@ -4,8 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
+    <style>
+        
+       body{
+        background-color:mediumseagreen;
+       } 
+       .main{
+        margin-top:10%;
+        margin-left:40%;
+        width:300px;
+        height:370px;
+        border-radius:20px;
+        background-color:white ;
+        text-align: center;
+       }
+       .user{
+        margin-top:20px;
+        font: size 20px;
+        border-bottom:2px solid gray ;
+        border:none;
+        outline:none;
+       }
+
+       .password{
+        margin-top:30px;
+        font: size 20px;
+        border-bottom:2px solid gray ;
+        border:none;
+        outline:none; 
+       }
+       
+       .forgot{
+        margin-top:20px;
+        font-size:18px;
+        cursor: pointer;
+       }
+
+       button.l-button{
+        width:250px;
+        height:40px;
+        background-color: mediumseagreen;
+        font-size:18px;
+        border:none;
+         color:white;
+        border-radius: 20px;
+        margin-top: 25%;
+        cursor: pointer;
+       }
+
+       .sign-up{
+        margin-top:20px;
+        font-size: 18px;
+        cursor:pointer;
+       }
+
+       span{
+        margin-top:20px;
+        font-size: 18px;
+        color:mediumseagreen;
+ 
+       }
+    
+
+        
+    </style>
 </head>
 <body>
+    <div class="main">
+        <div class="user">
+            <h1>login</h1>
+            <input type="text" placeholder="Username"/>
+        </div>
+        <div class="password">
+            <input type="password" placeholder="Password"/>
+        </div>
+        <div class="forgot">Forgot Password?</div>
+
+        <div class="button">
+            <button class="l-button">Login</button>
+        </div>
+        <div class="sign-up"> Not a member?<span>Sign Up</span></div>
+    </div>
     
 </body>
 </html>
