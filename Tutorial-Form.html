@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Order Form</title>
+    <style>
+        body {
+             font-family: 'Courier New, Courier, monospace';
+            margin: 0;
+            padding: 20px;
+            background-color: #e9ebf0;
+           
+        }
+        h1 {
+            text-align: center;
+        }
+        form {
+            width: 600px;
+            margin:0 auto;
+            background-color: #c2c0df;
+            padding: 20px;
+            border-radius: 10px;
+            
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box; 
+        }
+        
+
+        textarea{
+            
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        
+        input[type="submit"] {
+            background-color: #2a27f7;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            /* margin-left: 230px; */
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background-color: #3a05b6;
+        }
+
+        input[type="number"],
+        select{
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Order Form - Land of Boxes</h1>
+  <form action="" method="post" enctype="">
+        <h2>Contact Details:</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="address">Address:</label>
+        <textarea maxlength="200" required></textarea> 
+        <label for="phone">Telephone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+        <label for="email">Email Id:</label>
+        <input type="text" id="email" name="email" required>
+        
+        <h2>Product Details:</h2>
+        <label for="product">Product Name:</label>
+        <select id="product" name="product" required> 
+            <option>Select Product</option>
+            <option value="econo">Econo Box - Rs. 5</option>
+            <option value="standard">Standard Box - Rs. 10</option>
+            <option value="premium">Premium Box - Rs. 15</option>
+            <option value="deluxe">Deluxe Box - Rs. 20</option>
+            <option value="superdeluxe">Super Deluxe Box - Rs. 30</option>
+        </select>
+        <label for="productQuantity">Quantity:</label>
+        <input type="number" id="productQuantity" name="productQuantity" min="1" required>
+        <!-- min=1 is used to avoid negative value -->
+        
+        <h2>Method of Payment:</h2>
+        <label for="cardType">Credit Card Type:</label>
+        <select id="cardType" name="cardType" required>
+            <option value="visa">Visa</option>
+            <option value="mastercard">MasterCard</option>
+            <option value="amex">American Express</option>
+        </select>
+        <label for="cardNumber">Card Number:</label>
+        <input type="text" id="cardNumber" name="cardNumber" required>
+        <label for="expiryDate">Expiry Date:</label>
+        <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YYYY" required>
+        
+        <h2>Billing and Delivery Address:</h2>
+        <label for="billingAddress">Billing Address:</label>
+        <textarea maxlength="200" required></textarea> 
+        <label for="deliveryAddress">Delivery Address:</label>
+        <textarea maxlength="200" required></textarea> 
+        
+        <input type="submit" value="Place Order">
+    </form>
+</body>
+</html>
+
+
+    
