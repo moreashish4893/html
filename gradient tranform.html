@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gradient Transform</title>
-</head>
 <style>
-    div{
+    .loading{
         background-image:conic-gradient(red 0deg,red 90deg,yellow 90deg,yellow 360deg) ;
         height:500px;
         width:500px;
@@ -14,7 +13,8 @@
         position:relative;
         animation-name: am;
         animation-duration: 3s;
-        animation-iteration-count:infinite ;
+        animation-iteration-count: infinite ;
+        
     }
 
     @keyframes am{
@@ -29,8 +29,9 @@
     }
 
 </style>
+</head>
 <body>
-    <div>
+    <div class="loading">
 
     </div>
     
