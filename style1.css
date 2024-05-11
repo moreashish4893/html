@@ -1,0 +1,282 @@
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing : border-box;
+}   
+
+header{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)),url('Images/code.jpg');
+    background-size: cover;
+    color:white;
+}
+
+nav{
+    width:100%;
+    height:100px;
+    display:flex;
+    justify-content:space-between ;
+    align-items:center ;
+    flex-wrap: wrap;
+    padding:0 70px;
+    font-family : 'Poppins', sans-serif;
+    position: fixed;
+}
+/* 
+.logo{
+    font-size: 2em;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: rgb(238, 161, 19);
+
+} */
+
+.logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.logo img {
+	width: 100px;
+	border-radius: 20px;
+    height :100px;
+    object-fit: cover;
+    margin-top: 10px;
+    /* background-color: transparent; */
+}
+
+
+.menu a{
+    text-decoration: none;
+    color: rgb(238, 161, 19);
+    font-size: 1.2em;
+    padding:0.5rem 1rem;
+}
+
+.menu a:nth-child(5){
+    background : greenyellow;
+    border-radius: 8px;
+    margin :0 1rem;
+}
+
+.menu i{
+    font-size: 1.5rem;
+    margin :0 0.5rem;
+    color: rgb(238, 161, 19);
+    cursor :pointer;
+}
+
+.menu a:hover{
+    background: greenyellow;
+    border-radius: 8px;
+}
+
+.container{
+    width :100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding :0 70px;
+}
+
+.left{
+    flex-basis: 60%;       /*width*/
+    padding-top: 50px;
+}
+
+
+.right{
+    flex-basis: 30%;
+} 
+
+.right img{
+    width:100%;
+    height: 400px;
+    border-radius: 20px;
+}
+
+.left h2{
+    font-family : 'Poppins', sans-serif;
+    /* color :greenyellow; */
+}
+
+.left h2 span{
+    color :greenyellow;
+
+}
+
+.left h1{
+    font-family : "Kalam", cursive; 
+    font-size: 5em;
+}
+
+.left p{
+    font-family : 'Poppins', sans-serif;
+    line-height: 2.2rem;
+}
+
+#hire{
+    text-decoration: none;
+    background: greenyellow;
+    color :white;
+    padding :1rem 2rem;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    margin :0 1rem;
+}
+
+#myp{
+    text-decoration: none;
+    color :white;
+    padding :1rem 2rem;
+    border-radius: 8px;
+    border :1px dashed white;
+    font-size: 1.5rem;
+    margin :0 1rem;
+}
+
+#bio{
+    cursor: pointer;
+    padding :150px 70px;
+    width :100%;
+    height :100%;
+    display :flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    font-family : 'Poppins', sans-serif;
+}
+
+.leftbio{
+    flex-basis: 40%;        /*width*/
+}
+
+.rightbio{
+    flex-basis: 60%;
+}
+
+.leftbio img{
+    width :100%;
+    height :700px;
+    border-radius : 8px;
+    box-shadow:0px 0px 15px 5px black;
+}
+
+.rightbio{
+    text-align: center;
+    padding : 0 40px;
+}
+
+.rightbio p{
+    margin : 15px 0;
+    line-height: 2.2rem;
+}
+
+.rightbio h1{
+    font-size: 3rem;
+}
+
+.info{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+#follow{
+    text-align: center;
+}
+
+#follow i{
+    color : rgb(113, 180, 13);
+    font-size: 1.5rem;
+    margin :0 0.5rem;
+}
+
+.button{
+    text-align: center;
+    margin-top: 3rem;
+}
+
+#cv{
+    text-decoration: none;
+    color: black;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    margin: 0 1rem;
+    border :1px dashed gray;
+}
+
+#services{
+    padding :50px 70px;
+    width :100%;
+    height :100%;
+    background:rgba(0,0,0,0.05);
+    font-family : 'Poppins', sans-serif;
+    text-align: center;
+
+}
+
+.intro h1{
+    font-size: 3rem;
+}
+
+.body{
+    width :100%;
+    height :100%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin :3rem;
+}
+
+.sub-body{
+    flex-basis: 30%;
+    background: whitesmoke;
+    padding :1rem;
+    border-radius: 8px;
+}
+
+.sub-body h3{
+    font-size: 1.5rem;
+    margin :0.5rem 0;
+}
+
+.sub-body i{
+    font-size: 2.5rem;
+    color: greenyellow;
+
+}
+
+.bimg img{
+    width:100%;
+    border-radius : 8px;
+    box-shadow:0px 0px 15px 5px black;
+}
+
+footer{
+    background: greenyellow;
+    color: black;
+    font-size: 1.5rem;
+    padding :0.5rem;
+    font-family: "Jaro", sans-serif;
+    /* font-family :'Poppins', sans-serif; */
+    text-align: center;
+    
+}
+
+#bio{
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(rgba(255,255,255,0.8),rgba(255,255,255,0.8)), url('Images/code1.jpg');
+    background-size: cover;  
+}
+    
+

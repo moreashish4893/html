@@ -2,114 +2,44 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <style>
-        body{
-            font-family:'Courier New', Courier, monospace ;
-            margin:0px;
-            padding:0px;
-            background-color:#f8efb9;
-        }
-
-        header{
-            background-color: #333;
-            color: white;
-            padding:10px 0;
-            text-align: center;
-        }
-
-        h2{
-            color:#333;
-        }
-
-
-        nav ul{
-            list-style-type: none;
-            padding:0;
-        }
-
-        nav ul li{
-            display:inline-block;
-            margin-right: 50px;
-        }
-
-        nav ul li a{
-            color:white;
-            text-decoration: none;
-        }
-
-
-        section{
-            padding:30px;
-            margin:20px; 
-            border:1px solid #ddd;
-            background-color: #fff;
-            box-shadow:0 2px 4px rgba(0,0,0,0.1 ) ;
-        }
-
-
-        footer{
-            background-color: #333;
-            color:white;
-            text-align: center;
-            padding: 5px 0;
-            position:fixed;
-            bottom:0px;
-            width:100%;
-        }
-
-        .project{
-            margin-bottom:20px ;
-            border-bottom: 1px solid #ccc;
-            padding-bottom:20px;
-        }
-    </style>
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Porfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <header>
-        <h1>ASHISH MORE</h1>
-        <nav>
-            <ul>
-                <li><a href="#about"> About </a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contacts">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <section id="about">
-        <h2>About me :</h2>
-        <p>My Name is Ashish More......</p>
-    </section>
-
-    <section id="projects">
-        <h2>Projects :</h2>
-        <div class="projects">
-        <h3>Project 1</h3>
-         <p>Description of Project 1</p>
-         </div>
-
-         <div class="projects">
-            <h3>Project 2</h3>
-            <p>Description of Project 2</p>
-         </div>
-
-
-         <div class="projects">
-            <h3>Project 3</h3>
-            <p>Description of Project 3</p>
-         </div>
-    </section>
-
-    <section id="contact">
-        <h2>Contact :</h2>
-        <p>moreashish4893@gmail.com</p>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Ashish M. All Rights Reserved.</p>
-    </footer>
+  <div class="portfolio-container">
+    <ul class="navlist">
+        <li><a href="#" class="active">HOME</a></li>
+        <li><a href="#">WORK</a></li>
+        <li><a href="#">ABOUT</a></li>
+        <li><a href="#">PROJECT</a></li>
+        <li><a href="#">SERVICE</a></li>
+    </ul>
+    <div class="left-container">
+        <div class="icons">
+           <a href ="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a> 
+           <a href="https://www.linkedin.com/login"><i class="fa-brands fa-linkedin-in"></i></a>
+           <a href="https://www.instagram.com/accounts/login/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+           <a href="https://github.com/moreashish4893?tab=repositories"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <div class="content">
+            <p class="intro">Hi! I am <span>ASHISH V MORE</span></p>
+            <h1>Web Developer</h1>
+            <p class="details">I'm a passionate front-end developer with a keen eye for design. I love crafting beautiful and user-friendly interfaces that leave a lasting impression. With expertise in HTML, CSS, and JavaScript, I bring creativity and functionality together to build engaging web experiences.</p>
+            <div class="btn">
+                <button id="B1">Hire Me</button>
+                <button id="B2">View Project</button>
+            </div>
+            
+        </div>
+    </div>
+    <div class="right-container"></div>
+    <div class="design">
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+    </div>
+  </div>
     
 </body>
 </html>
